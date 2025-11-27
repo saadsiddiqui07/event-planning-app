@@ -1,41 +1,34 @@
 /**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
+ * Partiful-inspired color palette replacement
+ * Variable names remain EXACTLY the same as Expo's default theme.
  */
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
+    text: '#1A1523',            // Deep gray-purple (Partiful text tone)
+    background: '#FFFFFF',      // Clean white background
+    tint: '#A259FF',            // Main Partiful purple
+    icon: '#7A7490',            // Muted lavender-gray icons
+    tabIconDefault: '#9C93B5',  // Subtle default tab
+    tabIconSelected: '#A259FF', // Same purple as tint
   },
   dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    text: '#F2E9FF',            // Soft lavender-white
+    background: '#0F0A1E',      // Deep cosmic purple
+    tint: '#C29FFF',            // Light glowing purple
+    icon: '#B8A8D9',            // Muted pastel-lavender icon
+    tabIconDefault: '#B8A8D9',  // Neutral lavender
+    tabIconSelected: '#D9C6FF', // Brighter purple accent
   },
 };
 
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
     sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
     serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
     rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
     mono: 'ui-monospace',
   },
   default: {
