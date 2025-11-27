@@ -1,7 +1,8 @@
-import { StyleSheet, View } from "react-native";
+import { Pressable, StyleSheet, View } from "react-native";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
 
+import { router } from "expo-router";
 import { IconSymbol } from "./icon-symbol";
 
 import { Colors } from "@/constants/theme";
@@ -22,16 +23,20 @@ const AppHeader = () => {
         color={Colors[colorScheme ?? "light"].tabIconSelected}
       />
       <View style={styles.iconContainer}>
-        <IconSymbol
-          size={28}
-          name="bell.fill"
-          color={Colors[colorScheme ?? "light"].icon}
-        />
-        <IconSymbol
-          size={28}
-          name="bubble.left.fill"
-          color={Colors[colorScheme ?? "light"].icon}
-        />
+        <Pressable accessibilityRole="button" onPress={() => router.push("/notifications")} hitSlop={8}>
+          <IconSymbol
+            size={28}
+            name="bell.fill"
+            color={Colors[colorScheme ?? "light"].icon}
+          />
+        </Pressable>
+        <Pressable accessibilityRole="button" onPress={() => router.push("/messages")} hitSlop={8}>
+          <IconSymbol
+            size={28}
+            name="bubble.left.fill"
+            color={Colors[colorScheme ?? "light"].icon}
+          />
+        </Pressable>
       </View>
     </View>
   );
