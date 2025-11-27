@@ -1,26 +1,27 @@
 /**
- * Partiful-inspired color palette replacement
- * Variable names remain EXACTLY the same as Expo's default theme.
+ * Partiful color palette (based on provided hex codes).
+ * Variable names remain EXACTLY the same.
  */
 
 import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#1A1523',            // Deep gray-purple (Partiful text tone)
-    background: '#FFFFFF',      // Clean white background
-    tint: '#A259FF',            // Main Partiful purple
-    icon: '#7A7490',            // Muted lavender-gray icons
-    tabIconDefault: '#9C93B5',  // Subtle default tab
-    tabIconSelected: '#A259FF', // Same purple as tint
+    text: '#2f0e6a',            // Deep purple for readable UI text
+    background: '#f1e6e9',      // Soft pink base (Partiful aesthetic)
+    tint: '#4c2ee4',            // Strong vivid purple (primary interactive color)
+    icon: '#2f0e6a',            // Deep purple icons
+    tabIconDefault: '#dcc5f0',  // Pastel purple (inactive tabs)
+    tabIconSelected: '#4c2ee4', // Vivid purple (active tab)
   },
+
   dark: {
-    text: '#F2E9FF',            // Soft lavender-white
-    background: '#0F0A1E',      // Deep cosmic purple
-    tint: '#C29FFF',            // Light glowing purple
-    icon: '#B8A8D9',            // Muted pastel-lavender icon
-    tabIconDefault: '#B8A8D9',  // Neutral lavender
-    tabIconSelected: '#D9C6FF', // Brighter purple accent
+    text: '#c5e8fa',            // Pastel blue for dark mode text
+    background: '#000000',      // Black (Partiful uses full black in dark areas)
+    tint: '#4c2ee4',            // Keep vivid purple for strong contrast
+    icon: '#c5e8fa',            // Light blue icons in dark mode
+    tabIconDefault: '#4c2ee4',  // Purple inactive tabs for visibility
+    tabIconSelected: '#dcc5f0', // Soft purple highlight on selection
   },
 };
 
