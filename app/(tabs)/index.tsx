@@ -1,12 +1,12 @@
 import { ThemedText } from '@/components/themed-text'
-import { ThemedView } from '@/components/themed-view'
+import { GlobalView } from '@/components/ui/global-view'
 
 export default function HomeScreen() {
   return (
-    <ThemedView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <GlobalView>  
       <ThemedText type="title">Home</ThemedText>
       <ThemedText>Welcome to the Events App!</ThemedText>
-    </ThemedView>
+    </GlobalView>
   )
 }
 

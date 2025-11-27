@@ -1,12 +1,12 @@
-import { ThemedView } from '@/components/themed-view'
 import { ThemedText } from '@/components/themed-text'
+import { GlobalView } from '@/components/ui/global-view'
 
 export default function ProfileScreen() {
   return (
-    <ThemedView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <GlobalView>
       <ThemedText type="title">Profile</ThemedText>
       <ThemedText>Manage your account settings.</ThemedText>
-    </ThemedView>
+    </GlobalView>
   )
 }
 
