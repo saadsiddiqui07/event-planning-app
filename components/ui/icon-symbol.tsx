@@ -21,6 +21,9 @@ const MAPPING = {
   'calendar': 'event',
   'plus.circle.fill': 'add-circle',
   'person.fill': 'person',
+  'leaf.arrow.circlepath': 'local-florist',
+  'bell.fill': 'notifications',
+  'bubble.left.fill': 'chat-bubble',
 } as IconMapping;
 
 /**
